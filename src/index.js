@@ -9,6 +9,11 @@ const baseUrl = "https://platzi-avo.vercel.app";
 
 const appNode = document.querySelector('#app');
 
+appNode.addEventListener("click", (evento) => {
+    if(evento.target.nodeName === "H2"){
+        window.alert("hola")
+    }
+});
 
 const formatPrice = (price) => {
     // aqui utilizamos la API de internacionalizacion del formato inmerso en el navegador para decir el tipo de style que es moneda y que la moneda fuese Dollar, al final se asigna el format a la variable que es el parametro
